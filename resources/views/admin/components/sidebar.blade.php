@@ -203,11 +203,16 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                             <a href="#" class="dropdown-item">Status</a>
-                            <a href="./profile.html" class="dropdown-item">Profile</a>
+                            <a href="#" class="dropdown-item">Profile</a>
                             <a href="#" class="dropdown-item">Feedback</a>
                             <div class="dropdown-divider"></div>
-                            <a href="./settings.html" class="dropdown-item">Settings</a>
-                            <a href="./sign-in.html" class="dropdown-item">Logout</a>
+                            <a href="#" class="dropdown-item">Settings</a>
+                            <form method="POST" action="{{ route('admin.logout') }}">
+                                @csrf
+                                <a href="javascript:;"
+                                    onclick="event.preventDefault(); this.closest('form').submit();"
+                                    class="dropdown-item">{{ __('Logout') }}</a>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -231,7 +236,7 @@
                                 </span>
                             </a>
                         </li>
-                        
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#navbar-help" data-bs-toggle="dropdown"
                                 data-bs-auto-close="false" role="button" aria-expanded="false">

@@ -29,8 +29,12 @@
 <body>
     <script src="{{ asset('assets/admin/js/demo-theme.min.js') }}"></script>
     <div class="page">
+
         <!-- Sidebar -->
         @include('admin.components.sidebar')
+        
+        {{-- Navbar --}}
+        @include('admin.components.navbar')
 
         @yield('content')
     </div>
