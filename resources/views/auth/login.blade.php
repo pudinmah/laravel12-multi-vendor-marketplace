@@ -1,4 +1,6 @@
-@extends('frontend.layouts.master')
+@extends('frontend.home.layouts.master')
+
+@section('title', 'Login')
 
 @section('content')
     <!-- ======================== Breadcrumb Two Section Start ===================== -->

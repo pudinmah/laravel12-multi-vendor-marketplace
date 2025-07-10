@@ -1,4 +1,4 @@
-@extends('frontend.layouts.master')
+@extends('frontend.home.layouts.master')
 
 @section('content')
     <!--========================== Banner Section Start ==========================-->

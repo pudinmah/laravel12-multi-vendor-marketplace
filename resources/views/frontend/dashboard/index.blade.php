@@ -1,5 +1,6 @@
 @extends('frontend.dashboard.layouts.master')
 
+@section('title', 'Dashboard')
 
 @section('content')
     <!-- welcome balance Content Start -->
