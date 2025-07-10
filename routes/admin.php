@@ -65,5 +65,6 @@ Route::middleware('auth:admin')
             ->name('logout');
 
 
-        Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth:admin', 'verified'])->name('admin.dashboard');
+        Route::get('/dashboard', [DashboardController::class, 'index'])
+            ->middleware(['auth:admin', 'verified'])->name('dashboard');
     });
